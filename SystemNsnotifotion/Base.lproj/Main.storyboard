@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bu-k0-1H7">
+                                <rect key="frame" x="117" y="131" width="86" height="30"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.2784313725" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="v3d-Xo-8cY"/>
+                                </constraints>
+                                <state key="normal" title="开始监控">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="beginMonitorContact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YDY-dV-X8g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="变化了吗？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnQ-QX-L4b">
+                                <rect key="frame" x="68" y="207" width="185" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="0JP-Vx-A30"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.72156862749999995" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hnQ-QX-L4b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="68" id="VP3-2B-Wmu"/>
+                            <constraint firstItem="5bu-k0-1H7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="111" id="aCY-ed-id1"/>
+                            <constraint firstItem="5bu-k0-1H7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="101" id="gdf-0L-LUO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5bu-k0-1H7" secondAttribute="trailing" constant="101" id="nqD-MJ-iXi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hnQ-QX-L4b" secondAttribute="bottom" constant="208" id="u9E-fx-O6h"/>
+                            <constraint firstAttribute="trailing" secondItem="hnQ-QX-L4b" secondAttribute="trailing" constant="67" id="yRG-DD-bnb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="labelok" destination="hnQ-QX-L4b" id="MB3-Ih-FVp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216" y="403"/>
+        </scene>
+    </scenes>
+</document>
